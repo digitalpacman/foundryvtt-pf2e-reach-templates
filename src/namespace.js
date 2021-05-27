@@ -1,0 +1,1 @@
+module.exports = 'pf2e-reach-templates';

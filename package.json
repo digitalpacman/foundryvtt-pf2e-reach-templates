@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "jest",
+    "build": "webpack build"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.0.0",
+    "jest": "^26.6.3",
+    "webpack": "^5.25.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "async-mutex": "^0.3.1"
+  }
+}
