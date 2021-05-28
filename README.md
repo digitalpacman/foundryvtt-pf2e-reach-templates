@@ -12,8 +12,8 @@ Not available on the Foundry module market yet.
 2. Click Add-on Modules (on top menu)
 3. Click Install Module (bottom button)
 4. Paste the module.json url into the Manifest URL box (bottom of window)
-5. This is the module.json url https://raw.githubusercontent.com/digitalpacman/foundryvtt-pf2e-reach-templates/master/module.json
-6. Click Install (bottom right)
+https://raw.githubusercontent.com/digitalpacman/foundryvtt-pf2e-reach-templates/master/module.json
+5. Click Install (bottom right)
 
 # Description
 
