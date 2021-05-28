@@ -1,9 +1,11 @@
 {
   "scripts": {
     "test": "jest",
-    "build": "webpack build"
+    "build": "webpack build",
+    "package": "bestzip pf2e-reach-templates.zip dist/*"
   },
   "devDependencies": {
+    "bestzip": "^2.2.0",
     "copy-webpack-plugin": "^8.0.0",
     "jest": "^26.6.3",
     "webpack": "^5.25.0",

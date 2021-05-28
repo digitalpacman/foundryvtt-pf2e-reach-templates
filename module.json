@@ -9,6 +9,6 @@
     { "name": "token-attacher" }
   ],
   "scripts": [
-    "dist/main.js"
+    "main.js"
   ]
 }
