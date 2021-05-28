@@ -1,7 +1,7 @@
 {
   "name": "pf2e-reach-templates",
   "title": "Pathfinder 2e Reach Templates",
-  "description": "Enables hotkeys for showing a tokens reach. Binds 'r' to add reach template to seleccted token.",
+  "description": "Enables hotkeys for showing a tokens reach. Binds 'r' to add reach template to selected token.",
   "author": "digitalpacman",
   "version": "1.0.0",
   "minimumCoreVersion": "0.7.9",
