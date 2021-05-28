@@ -12,5 +12,5 @@
     "main.js"
   ],
   "download": "https://github.com/digitalpacman/foundryvtt-pf2e-reach-templates/raw/master/pf2e-reach-templates.zip",
-  "manifest": "https://github.com/digitalpacman/foundryvtt-pf2e-reach-templates/raw/master/version.txt"
+  "manifest": "https://github.com/digitalpacman/foundryvtt-pf2e-reach-templates/raw/master/module.json"
 }
