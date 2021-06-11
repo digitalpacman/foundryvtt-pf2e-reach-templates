@@ -4,7 +4,7 @@ token-attacher https://github.com/KayelGee/token-attacher
 
 # Marketplace Installation
 
-Not available on the Foundry module market yet.
+https://foundryvtt.com/packages/pf2e-reach-templates
 
 # Manual Installation
 
