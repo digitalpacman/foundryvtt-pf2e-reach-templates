@@ -23,6 +23,11 @@ You can customize up to 5 colors used for the reach template under module settin
 Press R multiple times on a single token to increase the reach by 5ft up to 25ft reach.
 To remove a reach template, press R until it disappears.
 
+# Available Configurations
+
+You may choose which 5 colors are used for building the templates.
+You may choose which hotkey [a-z] is the hotkey.
+
 # Preview 
 
 ![Reach Template Preview](https://github.com/digitalpacman/foundryvtt-pf2e-reach-templates/raw/master/example/large-biloko.gif)
