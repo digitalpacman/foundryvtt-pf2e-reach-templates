@@ -20,17 +20,14 @@ const nextColor = () => {
 
   const available = defaultColors.filter(color => 
     !reservations.find(({ defaultColor }) => defaultColor === color));
-  console.log('available', available)
   const defaultColor = available[0];
   const actualColor = colorMap[defaultColor]();
-  console.log('actualColor', actualColor)
   reservations.push({ defaultColor, actualColor } );
   return actualColor;
 };
 
 const releaseColor = (color) => {
   reservations = reservations.filter(({ actualColor }) => actualColor !== color);
-  console.log('reserved', reservations)
 };
 
 module.exports = {

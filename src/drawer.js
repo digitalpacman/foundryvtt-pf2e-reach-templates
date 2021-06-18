@@ -1,8 +1,8 @@
 const { nextColor, releaseColor } = require('./colors');
 const { getState } = require('./state');
 
-async function draw(token, reach, template) {  
-  const drawn = await Drawing.create({
+async function draw(token, reach, template) {
+  const [drawn] = await Drawing.create({
     type: CONST.DRAWING_TYPES.FREEHAND,
     author: game.user._id,
     x: token.x - (reach / 5) * canvas.scene.data.grid,
@@ -17,7 +17,7 @@ async function draw(token, reach, template) {
         y * canvas.scene.data.grid,
       ]),
   });
-  tokenAttacher.attachElementToToken(drawn, token, true);
+  await tokenAttacher.attachElementToToken(drawn, token, true);
   return drawn.id;
 }
 
