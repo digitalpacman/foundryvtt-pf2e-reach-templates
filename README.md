@@ -26,7 +26,8 @@ To remove a reach template, press R until it disappears.
 # Available Configurations
 
 You may choose which 5 colors are used for building the templates.
-You may choose which hotkey [a-z] is the hotkey.
+
+You may choose which key [a-z] is the hotkey.
 
 # Preview 
 
