@@ -2,7 +2,7 @@ const { nextColor, releaseColor } = require('./colors');
 const { getState } = require('./state');
 
 async function draw(token, reach, template) {
-  const [drawn] = await Drawing.create({
+  const [drawn] = await DrawingDocument.create([{
     type: CONST.DRAWING_TYPES.FREEHAND,
     author: game.user._id,
     x: token.x - (reach / 5) * canvas.scene.data.grid,
@@ -16,8 +16,12 @@ async function draw(token, reach, template) {
         x * canvas.scene.data.grid,
         y * canvas.scene.data.grid,
       ]),
-  });
-  await tokenAttacher.attachElementToToken(drawn, token, true);
+  }], {parent: canvas.scene});
+  try {
+    await tokenAttacher.attachElementToToken(drawn, token, true);
+  } catch (ex) {
+    console.error(ex);
+  }
   return drawn.id;
 }
 
@@ -25,8 +29,9 @@ async function clear(token) {
   const { drawnId } = getState(token);
   const drawn = DrawingsLayer.instance.get(drawnId);
   if (drawn) {
+    console.log(drawn);
     releaseColor(drawn.data.strokeColor);
-    await drawn.delete();
+    await drawn.document.delete({parent: canvas.scene});
   }
 }
 

@@ -6,7 +6,6 @@ const Mutex = require('async-mutex').Mutex;
 
 Hooks.on("ready", function() {
   document.addEventListener('keydown', handleKeyDown);
-
   game.settings.register('pf2e-reach-templates', 'hotkey', {
     name: `Hotkey`,
     scope: 'world',
@@ -53,8 +52,6 @@ Hooks.on("ready", function() {
       type: String,
     });  
   }
-
-  resetColors();
 });
 
 const mutex = new Mutex();
