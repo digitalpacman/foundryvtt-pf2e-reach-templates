@@ -29,7 +29,6 @@ async function clear(token) {
   const { drawnId } = getState(token);
   const drawn = DrawingsLayer.instance.get(drawnId);
   if (drawn) {
-    console.log(drawn);
     releaseColor(drawn.data.strokeColor);
     await drawn.document.delete({parent: canvas.scene});
   }
